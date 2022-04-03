@@ -1,59 +1,93 @@
-p {
-    font-family: 'Ubuntu', sans-serif;
+body {
+    background-color:black;
+    padding-top: 1px;
+}
+
+#everything {
     text-align: center;
-    font-size: 20px;
-}
-
-ul {
-    display: table;
-    margin: 0 auto;
-}
-
-li {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 20px;
 }
 
 h1 {
-    font-family: 'Ubuntu', sans-serif;
-    font-size:50px;
-    text-align: center;
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(45, 185, 190, 0.637), rgba(255,0,0,0));
+    color:lawngreen;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 20px;
+    margin-bottom: 22px;
 }
 
-body {
-    background-image: url(white_background.jpg);
-    background-size:cover;
-    background-attachment: fixed;
-    background-position: top;
-    padding:0;
-    margin:0;
+h1 span {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: black;
+    border-color: lawngreen;
+    border-style: solid;
 }
 
-#fridges {
-    width: 100%;
-    padding-top: 420px;
-    margin: 0 auto;
-    background-image: url("two_fridges.png");
-    background-position: top;
-    background-repeat: repeat;
-  }
+input {
+    border-radius: 10px;
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    max-width: 80%;
+    width: 500px;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 20px;
+    text-indent: 15px;
+}
+
+select {
+    appearance: none;
+}
 
 h2 {
-    margin-top: 40px;
-    font-family: 'Ubuntu', sans-serif;
-    font-size:30px;
-    text-align: center;
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(45, 120, 190, 0.637), rgba(255,0,0,0));
+    color: white;
+    font-family: 'Tahoma', sans-serif;
+    font-size: 15px;
+}
+
+p {
+    color: white;
+    font-family: 'Tahoma', sans-serif;
+    line-height: 20%;
 }
 
 img {
-    max-height: 80px;
-    padding-left: 30px;
-    padding-right: 30px;
+    max-width: 80%;
+    width: 500px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
 }
 
-#links {
-    margin: 0 auto;
-    width:fit-content;
+.number {
+    margin-top: 10px;
+    margin-left: 4px;
+    margin-right: 4px;
+    border-style: solid;
+    border-color:dimgray;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color:dimgray;
+    width: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.number p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.guess {
+    margin-top: 10px;
+    display: inline-block;
+    max-width: 80%;
+    width: 500px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+}
+
+.guess p {
+    text-align: left;
+    padding-left: 12px;
 }

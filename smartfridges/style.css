@@ -1,0 +1,59 @@
+p {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    font-size: 20px;
+}
+
+ul {
+    display: table;
+    margin: 0 auto;
+}
+
+li {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size:50px;
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(45, 185, 190, 0.637), rgba(255,0,0,0));
+}
+
+body {
+    background-image: url(white_background.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: top;
+    padding:0;
+    margin:0;
+}
+
+#fridges {
+    width: 100%;
+    padding-top: 420px;
+    margin: 0 auto;
+    background-image: url("two_fridges.png");
+    background-position: top;
+    background-repeat: repeat;
+  }
+
+h2 {
+    margin-top: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size:30px;
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(45, 120, 190, 0.637), rgba(255,0,0,0));
+}
+
+img {
+    max-height: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#links {
+    margin: 0 auto;
+    width:fit-content;
+}
