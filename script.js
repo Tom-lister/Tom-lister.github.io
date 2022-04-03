@@ -37,7 +37,7 @@ function check(e) {
         field.setAttribute("list","")
     }
     if(e.keyCode == 13 && !finished) {
-        let field = document.getElementById("film-guess");
+        field.setAttribute("list","")
         let guess = field.value;
         field.value = "";
         let guessbox = document.createElement("div");
