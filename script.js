@@ -2,17 +2,21 @@ let frame = 1;
 let finished = false;
 let selected = 1;
 let daily = {
-    "4-3":["Anti-Sugar PSA","&#x1F36C ","1"],
-    "5-3":["Looped","&#x267B ","2"],
-    "6-3":["The MadD G Documentary","&#x1F4FD ","3"],
-    "7-3":["Family Guy Intro (HD)","&#x1F9CD ","4"],
-    "8-3":["Vaccines & Violence (An In-Depth Documentary)","&#x1F489 ","5"],
-    "9-3":["Poop Show","&#x1F4A9 ","6"],
-    "10-3":["The Final Accommodation","&#x1F3E0 ","7"],
-    "11-3":["How To Stop Diseases","&#x1F9EC ","8"],
-    "12-3":["Every Teen Movie Opening","&#x1F39E ","9"],
-    "13-3":["Is Chicken Even Real (An In-Depth Documentary)","&#x1F414 ","10"],
-    "14-3":["Anti-Sugar PSA (5th Anniversary Edition)","&#x1F36D ","11"]
+    "3-4":["Anti-Sugar PSA","&#x1F36C ","1"],
+    "4-4":["Looped","&#x267B ","2"],
+    "x5-4":["The MadD G Documentary","&#x1F4FD ","3"],
+    "6-4":["Family Guy Intro (HD)","&#x1F9CD ","4"],
+    "7-4":["Vaccines & Violence (An In-Depth Documentary)","&#x1F489 ","5"],
+    "8-4":["Poop Show","&#x1F4A9 ","6"],
+    "9-4":["The Final Accommodation","&#x1F3E0 ","7"],
+    "10-4":["How To Stop Diseases","&#x1F9EC ","8"],
+    "11-4":["Every Teen Movie Opening","&#x1F39E ","9"],
+    "12-4":["Supernova","&#x1F320 ","10"],
+    "13-4":["Underground Fight","&#x1F44A ","11"],
+    "14-4":["Is Chicken Even Real (An In-Depth Documentary)","&#x1F414 ","12"],
+    "5-4":["Chairs","&#x1FA91 ","13"],
+    "15-4":["100 Subscriber Special (Again)","&#x1F4B9 ","14"],
+    "16-4":["Anti-Sugar PSA (5th Anniversary Edition)","&#x1F36D ","15"]
 }
 let congrats = {
     1:"Gyro Genius (1/6)",
@@ -22,8 +26,9 @@ let congrats = {
     5:"Plutonium Poor (5/6)",
     6:"TLPlays Terrible (6/6)"
 };
-const d = new Date( new Date().getTime() + 24 * 3600 * 1000)
-let day = d.getDate() + "-" + d.getMonth();
+
+const d = new Date( new Date().getTime())
+let day = d.getDate() + "-" + (d.getMonth()+1);
 
 let answer = daily[day][0];
 let emoji = daily[day][1];
