@@ -4,8 +4,8 @@ let selected = 1;
 let daily = {
     "3-4":["Anti-Sugar PSA","&#x1F36C ","1"],
     "4-4":["Looped","&#x267B ","2"],
-    "x5-4":["The MadD G Documentary","&#x1F4FD ","3"],
-    "6-4":["Family Guy Intro (HD)","&#x1F9CD ","4"],
+    "5-4":["The MadD G Documentary","&#x1F4FD ","3"],
+    "6-4":["Chairs","&#x1FA91 ","4"],
     "7-4":["Vaccines & Violence (An In-Depth Documentary)","&#x1F489 ","5"],
     "8-4":["Poop Show","&#x1F4A9 ","6"],
     "9-4":["The Final Accommodation","&#x1F3E0 ","7"],
@@ -14,9 +14,9 @@ let daily = {
     "12-4":["Supernova","&#x1F320 ","10"],
     "13-4":["Underground Fight","&#x1F44A ","11"],
     "14-4":["Is Chicken Even Real (An In-Depth Documentary)","&#x1F414 ","12"],
-    "5-4":["Chairs","&#x1FA91 ","13"],
-    "15-4":["100 Subscriber Special (Again)","&#x1F4B9 ","14"],
-    "16-4":["Anti-Sugar PSA (5th Anniversary Edition)","&#x1F36D ","15"]
+    "15-4":["Family Guy Intro (HD)","&#x1F9CD ","13"],
+    "16-4":["100 Subscriber Special (Again)","&#x1F4B9 ","14"],
+    "17-4":["Anti-Sugar PSA (5th Anniversary Edition)","&#x1F36D ","15"]
 }
 let congrats = {
     1:"Gyro Genius (1/6)",
