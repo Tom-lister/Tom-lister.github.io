@@ -8,6 +8,7 @@ body {
 }
 
 h1 {
+    display: inline-block;
     color:lawngreen;
     font-family: 'Tahoma', sans-serif;
     font-size: 20px;
@@ -50,7 +51,18 @@ p {
     line-height: 20%;
 }
 
-img {
+.arrow {
+    height: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+#rightarrow {
+    opacity: 0.3;
+}
+
+#display {
     max-width: 80%;
     width: 500px;
     border-style: solid;

@@ -27,12 +27,19 @@ let congrats = {
     6:"TLPlays Terrible (6/6)"
 };
 
-const d = new Date( new Date().getTime())
+const d = new Date( new Date().getTime());
 let day = d.getDate() + "-" + (d.getMonth()+1);
+let currentday = d.getDate() + "-" + (d.getMonth()+1);
+
+const lengths = {1:31,2:28,3:31,4:30,5:31,6:30,7:31,8:31,9:30,10:31,11:30,12:31};
+//Code does not account for leap years!
 
 let answer = daily[day][0];
 let emoji = daily[day][1];
 let number = daily[day][2];
+
+let archived = false;
+let refreshed = false;
 
 function check(e) {
     let field = document.getElementById("film-guess");
@@ -93,11 +100,14 @@ function selectFrame(id) {
         selection = parseInt(id);
         document.getElementById(id).style.backgroundColor = "#212121";
         document.getElementById(id).style.borderColor = "#212121";
-        document.getElementById("display").src = answer+"/"+id+".png";
-        document.getElementById(selected).style.backgroundColor = "dimgray";
-        document.getElementById(selected).style.borderColor = "dimgray";
+        if (!refreshed || selected == 1) {
+            document.getElementById(selected).style.backgroundColor = "dimgray";
+            document.getElementById(selected).style.borderColor = "dimgray";
+        }
+        refreshed = false;
         selected = id;
     }
+    document.getElementById("display").src = answer+"/"+id+".png";
 };
 
 function goodEnding(frame) {
@@ -157,7 +167,7 @@ function copyBox() {
     let copybox = document.createElement("div");
     copybox.classList.add("number");
     copybox.setAttribute("onclick","copyText()")
-    copybox.id = "copy-box";
+    copybox.id = "7";
     let copytext = document.createElement("p");
     copytext.id = "copy-text";
     copytext.innerHTML = "Copy results";
@@ -170,15 +180,78 @@ function copyBox() {
 
 function copyText() {
     if (frame < 7) {
-        navigator.clipboard.writeText("Unethiverse Framed #"+number+"\n🎥 "+"🟥 ".repeat(frame-1)+"🟩"+" ⬛".repeat(6-frame)+"\nhttps://tom-lister.github.io/");
+        navigator.clipboard.writeText("Unethiverse Framed #"+number+(archived?" (Replay)":"")+"\n🎥 "+"🟥 ".repeat(frame-1)+"🟩"+" ⬛".repeat(6-frame)+"\nhttps://tom-lister.github.io/");
     } else {
-        navigator.clipboard.writeText("Unethiverse Framed #"+number+"\n🎥"+"🟥 🟥 🟥 🟥 🟥 🟥\nhttps://tom-lister.github.io/");
+        navigator.clipboard.writeText("Unethiverse Framed #"+number+(archived?" (Replay)":"")+"\n🎥"+"🟥 🟥 🟥 🟥 🟥 🟥\nhttps://tom-lister.github.io/");
     };
     document.getElementById("copy-text").innerHTML = "Copied!";
-    box = document.getElementById("copy-box");
+    box = document.getElementById("7");
     box.setAttribute("onclick","");
     box.style.cursor = "default";
 
+}
+
+function previous() {
+    if (day != "3-4") {
+        if (day.split("-")[0] == "1") {
+            day = String(lengths[day.split("-")[1] - 1]) + "-" + String(parseInt(day.split("-")[1]) - 1);
+        } else {
+            day = String(parseInt(day.split("-")[0]) - 1) + "-" + day.split("-")[1];
+        }
+        document.getElementById("rightarrow").style.opacity = 1;
+        archived = true;
+    }
+    if (day == "3-4") {
+        document.getElementById("leftarrow").style.opacity = 0.3;
+    }
+    refresh();
+}
+
+function next() {
+    if (day != currentday) {
+        if (parseInt(day.split("-")[0]) == lengths[day.split("-")[1]]) {
+            day = "1-" + String(parseInt(day.split("-")[1]) + 1);
+        } else {
+            day = String(parseInt(day.split("-")[0]) + 1) + "-" + day.split("-")[1];
+        }
+        document.getElementById("leftarrow").style.opacity = 1;
+    }
+    if (day == currentday) {
+        document.getElementById("rightarrow").style.opacity = 0.3;
+        archived = false;
+    }
+    refresh();
+}
+
+function refresh() {
+    answer = daily[day][0];
+    emoji = daily[day][1];
+    number = daily[day][2];
+    if (finished) {
+        for (let i = 2; i < 8; i += 1) {
+            document.getElementById(i).remove();
+        }
+        frame = 1;
+        let entry = document.getElementById("entry");
+        entry.innerHTML = "";
+        let input = document.createElement("input");
+        input.id = "film-guess";
+        input.name = "film-guess";
+        input.placeholder = "Search for a movie";
+        input.setAttribute("onkeyup","check(event)");
+        entry.append(input);
+        entry.append(document.createElement("br"))
+    } else if (frame != 1) {
+        for (let i = 2; i < frame+1; i += 1) {
+            document.getElementById(i).remove();
+        }
+        frame = 1;
+    }
+    document.getElementById("guesses").innerHTML = "";
+    document.getElementById("display").style.borderColor = "white";
+    refreshed = true;
+    finished = false;
+    selectFrame(String(frame));
 }
 
 document.getElementById("display").src = answer+"/1.png"
