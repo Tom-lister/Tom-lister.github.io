@@ -16,7 +16,12 @@ let daily = {
     "14-4":["Is Chicken Even Real (An In-Depth Documentary)","&#x1F414 ","12"],
     "15-4":["Family Guy Intro (HD)","&#x1F9CD ","13"],
     "16-4":["100 Subscriber Special (Again)","&#x1F4B9 ","14"],
-    "17-4":["Anti-Sugar PSA (5th Anniversary Edition)","&#x1F36D ","15"]
+    "17-4":["Anti-Sugar PSA (5th Anniversary Edition)","&#x1F36D ","15"],
+    "18-4":["Permanent Accommodation","&#x1F6B9","16"],
+    "19-4":["Nova Blanc","&#x1F64C","17"],
+    "20-4":["Macbeth on a Budget","&#x1F4D6","18"],
+    "21-4":["Brutal Fight Scene","&#x2620","19"],
+    "22-4":["The House of the Future","&#x1F3DA","20"]
 }
 let congrats = {
     1:"Gyro Genius (1/6)",
