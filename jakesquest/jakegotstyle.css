@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("Jakeus O'Fun.png");
+    background-size: cover;
+    min-height: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+#info {
+    width: 21%;
+    margin-left: auto;
+    margin-right: 5%;
+    margin-top: 2%;
+    background-color: rgba(255,255,255,0.3);
+    padding : 2%;
+    padding-top: 0.001%;
+}
+
+a {
+    font-style: italic;
+    font-size: 26px;
+    text-decoration: none;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>DarkCorp™ Enterprise</title>
+        <link href="style.css" rel="stylesheet">
+        <link rel="icon" href="logo.png" type="image/x-icon">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    </head>
+    <body>
+        <h1>DarkCorp Enterprise</h1>
+        <div id="bar">
+            <a href="index.html"><div class="option">
+                <p>About</p>
+            </div></a><a href="marketplace.html"><div class="option">
+                <p>Marketplace</p>
+            </div></a><a href="publicservices.html"><div class="option">
+                <p>Public Services</p>
+            </div></a><div class="selected">
+                <p>Admin</p>
+            </div>
+        </div>
+        <div id="main">
+            <h2>Login to view classified information:</h2>
+            <form>
+                <input type="text" placeholder="Username" id="username"><br>
+                <input type="password" placeholder="Password" id="password"><br><br>
+                <input type="button" id="button" value="Submit"><br><br>
+                <p id = "failtext"><br></p>
+            </form>
+        </div>
+        <div id="bottom">
+            <div class="half-block"><a href="jakesquest/index.html"><p>Download Jake's Quest</p></a>
+            </div><div class="half-block"><a href="unethiverseframed/index.html"><p>Play Unethiverse Framed</p></a></div>
+        </div>
+    </body>
+    <script>
+        let code = "throughsoulsreborn";
+        let username = document.getElementById("username");
+        let password = document.getElementById("password");
+        let btn = document.getElementById("button");
+        let text = document.getElementById("failtext");
+        username.addEventListener("click", function () {
+            text.innerHTML = "<br>";
+        })
+        password.addEventListener("click",  function () {
+            text.innerHTML = "<br>";
+        })
+        username.addEventListener("keypress", function () {
+            text.innerHTML = "<br>";
+        })
+        password.addEventListener("keypress",  function () {
+            text.innerHTML = "<br>";
+        })
+        btn.addEventListener("click", function () {
+            if (username.value == "Alfred_Doomsbury" && password.value == code) {
+                window.location.href = "secretadminareakeepout.html";
+            } else {
+                text.innerHTML = "Incorrect Username or Password";
+                username.value = '';
+                password.value = '';
+            }
+        })
+        username.addEventListener("keypress", function (event) {
+            if (event.key == "Enter") {
+                if (username.value == "Alfred_Doomsbury" && password.value == code) {
+                    window.location.href = "secretadminareakeepout.html";
+                } else {
+                    text.innerHTML = "Incorrect Username or Password";
+                    username.value = '';
+                    password.value = '';
+                }
+            }
+        })
+        password.addEventListener("keypress", function (event) {
+            if (event.key == "Enter") {
+                if (username.value == "Alfred_Doomsbury" && password.value == code) {
+                    window.location.href = "secretadminareakeepout.html";
+                } else {
+                    text.innerHTML = "Incorrect Username or Password";
+                    username.value = '';
+                    password.value = '';
+                }
+            }
+        })
+    </script>
+</html>
