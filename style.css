@@ -62,10 +62,8 @@ h2 {
     cursor: pointer;
 }
 
-.center-block {
+.text-block {
     margin-top: 40px;
-    margin-left: 32%;
-    width: 40%;
     line-height: 35px;
     font-size: 25px;
 }
@@ -102,6 +100,37 @@ p {
 .link:hover {
     cursor: pointer;
     opacity: 50%;
+}
+
+.employees {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    padding-bottom: 2%;
+}
+
+.employee {
+    display: inline-block;
+    width: 15%;
+    min-width: 100px;
+    height: fit-content;
+    margin: 2%;
+    background-image: radial-gradient(#2c0c58,#0f0320,black);
+    border-radius: 50px;
+}
+
+.employee img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+    display: block;
+    width: 70%;
+    max-width: 150px;
+    height: auto;
+}
+
+.employee p {
+    font-size:20px;
 }
 
 #bottom {
