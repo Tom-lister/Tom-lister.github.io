@@ -21,8 +21,7 @@ let daily = {
     "19-4":["Nova Blanc","&#x1F64C","17"],
     "20-4":["Macbeth on a Budget","&#x1F4D6","18"],
     "21-4":["Brutal Fight Scene","&#x2620","19"],
-    "22-4":["The House of the Future","&#x1F3DA","20"],
-    "23-4":["Halloween III - Season of the Witch (1982)","&#x1F9D9","X"]
+    "22-4":["The House of the Future","&#x1F3DA","20"]
 }
 let congrats = {
     1:"Gyro Genius (1/6)",
@@ -33,11 +32,9 @@ let congrats = {
     6:"TLPlays Terrible (6/6)"
 };
 
-///const d = new Date( new Date().getTime());
-///let day = d.getDate() + "-" + (d.getMonth()+1);
-///let currentday = d.getDate() + "-" + (d.getMonth()+1);
-let day = "23-4"
-let currentday = "23-4";
+const d = new Date( new Date().getTime());
+let day = d.getDate() + "-" + (d.getMonth()+1);
+let currentday = d.getDate() + "-" + (d.getMonth()+1);
 
 const lengths = {1:31,2:28,3:31,4:30,5:31,6:30,7:31,8:31,9:30,10:31,11:30,12:31};
 //Code does not account for leap years!
@@ -115,7 +112,7 @@ function selectFrame(id) {
         refreshed = false;
         selected = id;
     }
-    document.getElementById("display").src = answer+"/"+id+".png";
+    document.getElementById("display").src = "unethiverseframes/"+answer+"/"+id+".png";
 };
 
 function goodEnding(frame) {
@@ -200,9 +197,14 @@ function copyText() {
 }
 
 function previous() {
-    if (day != "3-4") {
+    if (day == "29-12") {
+        day = "22-4";
+        archived = true;
+    } else if (day != "3-4") {
         if (day.split("-")[0] == "1") {
             day = String(lengths[day.split("-")[1] - 1]) + "-" + String(parseInt(day.split("-")[1]) - 1);
+        } else if (day.split("-")[1] == "1") {
+            day = String(lengths[day.split("-")[1] - 1]) + "-12";
         } else {
             day = String(parseInt(day.split("-")[0]) - 1) + "-" + day.split("-")[1];
         }
@@ -216,9 +218,13 @@ function previous() {
 }
 
 function next() {
-    if (day != currentday) {
+    if (day == "22-4") {
+        day = "29-12";
+    } else if (day != currentday) {
         if (parseInt(day.split("-")[0]) == lengths[day.split("-")[1]]) {
             day = "1-" + String(parseInt(day.split("-")[1]) + 1);
+        } else if (day == "31-12") {
+            day = "1-1";
         } else {
             day = String(parseInt(day.split("-")[0]) + 1) + "-" + day.split("-")[1];
         }
