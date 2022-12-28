@@ -21,46 +21,46 @@ let daily = {
     "19-4":["Nova Blanc","&#x1F64C ","17"],
     "20-4":["Macbeth on a Budget","&#x1F4D6 ","18"],
     "21-4":["Brutal Fight Scene","&#x2620 ","19"],
-    "22-4":["The House of the Future","&#x1F3DA ","20"]
-    "29-12":["SwaggyWhiteBoy","&#x1F60E ","21"]
-    "30-12":["Who's that Weird Guy over there","&#x1F574 ","22"]
-    "31-12":["Spliced","&#x1F3A5","23"]
-    "1-1":["What if Evangelion was Real","&#x1F34A ","24"]
-    "2-1":["Swamp Man","&#x1F9B8 ","25"]
-    "3-1":["Anti-Sugar PSA (5th Anniversary Edition)","&#x1F36D ","26"]
-    "4-1":["The Slob","&#x1F4A4 ","27"]
-    "5-1":["The Three Jakes","&#x1F451 ","28"]
-    "6-1":["We're out of Video Ideas","&#x1F4A1 ","29"]
-    "7-1":["Amateur Labs (Interview with Map Creator)","&#x1FAC3 ","30"]
-    "8-1":["QueenAI","&#x1F5A5 ","31"]
-    "9-1":["Seinfeld Lore","&#x1F3A4 ","32"]
-    "10-1":["Running Late","&#x1F4F1 ","33"]
-    "11-1":["Looking for Cryptids","&#x1F9DF ","34"]
-    "12-1":["Rookie","&#x1F694 ","35"]
-    "13-1":["Tiny Eminem","&#x1F3B5 ","36"]
-    "14-1":["You Should Jump","&#x26F0 ","37"]
-    "15-1":["Poop Show","&#x1F4A9 ","38"]
-    "16-1":["Finding a Cool Rock in the Woods","&#x1FAA8 ","39"]
-    "17-1":["#GoneViral","&#x1F98C ","40"]
-    "18-1":["Percy's Birthday Extravaganza","&#x1F382 ","41"]
-    "19-1":["Rap Snacks","&#x1F954 ","42"]
-    "20-1":["The Ultimate Pimp","&#x1F4B8 ","43"]
-    "21-1":["20 Guys","&#x1F468	","44"]
-    "22-1":["The Co-Worker who tells Awful Stories","&#x1F6CD ","45"]
-    "23-1":["Illuminati Confirmed (The MadD G Show)","&#x1F441 ","46"]
-    "24-1":["Welcome to Argon Films","&#x1F35E ","47"]
-    "25-1":["Top 7 Places in London","&#x1F3D9 ","48"]
-    "26-1":["Regenerations (The Depraved Adventures of Bob & Mike)","&#x1F46C	 ","49"]
-    "27-1":["Piss Show","&#x1F6BD ","50"]
-    "28-1":["The Visitor","&#x1F6AA ","51"]
-    "29-1":["MadD G - The Inside Story","&#x1F44A ","52"]
-    "30-1":["What to do if a Shadow Man is following you","&#x1F31A	","53"]
-    "31-1":["Watching the Truman Show for the First Time","&#x1F4FA	","54"]
-    "1-2":["Percy Manthey's Outside","&#x1F3DE ","55"]
-    "2-2":["How to Check if your House is Haunted","&#x1F47B ","56"]
-    "3-2":["Trying Cigarettes for the First Time","&#x1F6AC	","57"]
-    "4-2":["Scariest GMOD Nextbot Ever","&#x1F631 ","58"]
-    "5-2":["The Bunny","&#x1F407 ","59"]
+    "22-4":["The House of the Future","&#x1F3DA ","20"],
+    "29-12":["SwaggyWhiteBoy","&#x1F60E ","21"],
+    "30-12":["Who's that Weird Guy over there","&#x1F574 ","22"],
+    "31-12":["Spliced","&#x1F3A5","23"],
+    "1-1":["What if Evangelion was Real","&#x1F34A ","24"],
+    "2-1":["Swamp Man","&#x1F9B8 ","25"],
+    "3-1":["Anti-Sugar PSA (5th Anniversary Edition)","&#x1F36D ","26"],
+    "4-1":["The Slob","&#x1F4A4 ","27"],
+    "5-1":["The Three Jakes","&#x1F451 ","28"],
+    "6-1":["We're out of Video Ideas","&#x1F4A1 ","29"],
+    "7-1":["Amateur Labs (Interview with Map Creator)","&#x1FAC3 ","30"],
+    "8-1":["QueenAI","&#x1F5A5 ","31"],
+    "9-1":["Seinfeld Lore","&#x1F3A4 ","32"],
+    "10-1":["Running Late","&#x1F4F1 ","33"],
+    "11-1":["Looking for Cryptids","&#x1F9DF ","34"],
+    "12-1":["Rookie","&#x1F694 ","35"],
+    "13-1":["Tiny Eminem","&#x1F3B5 ","36"],
+    "14-1":["You Should Jump","&#x26F0 ","37"],
+    "15-1":["Poop Show","&#x1F4A9 ","38"],
+    "16-1":["Finding a Cool Rock in the Woods","&#x1FAA8 ","39"],
+    "17-1":["#GoneViral","&#x1F98C ","40"],
+    "18-1":["Percy's Birthday Extravaganza","&#x1F382 ","41"],
+    "19-1":["Rap Snacks","&#x1F954 ","42"],
+    "20-1":["The Ultimate Pimp","&#x1F4B8 ","43"],
+    "21-1":["20 Guys","&#x1F468	","44"],
+    "22-1":["The Co-Worker who tells Awful Stories","&#x1F6CD ","45"],
+    "23-1":["Illuminati Confirmed (The MadD G Show)","&#x1F441 ","46"],
+    "24-1":["Welcome to Argon Films","&#x1F35E ","47"],
+    "25-1":["Top 7 Places in London","&#x1F3D9 ","48"],
+    "26-1":["Regenerations (The Depraved Adventures of Bob & Mike)","&#x1F46C ","49"],
+    "27-1":["Piss Show","&#x1F6BD ","50"],
+    "28-1":["The Visitor","&#x1F6AA ","51"],
+    "29-1":["MadD G - The Inside Story","&#x1F44A ","52"],
+    "30-1":["What to do if a Shadow Man is following you","&#x1F31A	","53"],
+    "31-1":["Watching the Truman Show for the First Time","&#x1F4FA	","54"],
+    "1-2":["Percy Manthey's Outside","&#x1F3DE ","55"],
+    "2-2":["How to Check if your House is Haunted","&#x1F47B ","56"],
+    "3-2":["Trying Cigarettes for the First Time","&#x1F6AC	","57"],
+    "4-2":["Scariest GMOD Nextbot Ever","&#x1F631 ","58"],
+    "5-2":["The Bunny","&#x1F407 ","59"],
     "6-2":["Imagine (MadD G)","&#x1F476	","60"]
 }
 let congrats = {
@@ -225,9 +225,9 @@ function copyBox() {
 
 function copyText() {
     if (frame < 7) {
-        navigator.clipboard.writeText("Unethiverse Framed #"+number+(archived?" (Replay)":"")+"\n🎥 "+"🟥 ".repeat(frame-1)+"🟩"+" ⬛".repeat(6-frame)+"\nhttps://tom-lister.github.io/");
+        navigator.clipboard.writeText("Unethiverse Framed #"+number+(archived?" (Replay)":"")+"\n🎥 "+"🟥 ".repeat(frame-1)+"🟩"+" ⬛".repeat(6-frame)+"\n\nhttps://tom-lister.github.io/");
     } else {
-        navigator.clipboard.writeText("Unethiverse Framed #"+number+(archived?" (Replay)":"")+"\n🎥"+"🟥 🟥 🟥 🟥 🟥 🟥\nhttps://tom-lister.github.io/");
+        navigator.clipboard.writeText("Unethiverse Framed #"+number+(archived?" (Replay)":"")+"\n🎥"+"🟥 🟥 🟥 🟥 🟥 🟥\n\nhttps://tom-lister.github.io/");
     };
     document.getElementById("copy-text").innerHTML = "Copied!";
     box = document.getElementById("7");
