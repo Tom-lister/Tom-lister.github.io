@@ -239,6 +239,7 @@ function copyText() {
 function previous() {
     if (day == "29-12") {
         day = "22-4";
+        document.getElementById("rightarrow").style.opacity = 1;
         archived = true;
     } else if (day != "3-4") {
         if (day.split("-")[0] == "1") {
@@ -308,4 +309,4 @@ function refresh() {
     selectFrame(String(frame));
 }
 
-document.getElementById("display").src = answer+"/1.png"
+document.getElementById("display").src = "unethiverseframes/"+answer+"/1.png"
