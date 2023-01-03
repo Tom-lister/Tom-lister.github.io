@@ -264,10 +264,10 @@ function next() {
     if (day == "22-4") {
         day = "29-12";
     } else if (day != currentday) {
-        if (parseInt(day.split("-")[0]) == lengths[day.split("-")[1]]) {
-            day = "1-" + String(parseInt(day.split("-")[1]) + 1);
-        } else if (day == "31-12") {
+        if (day == "31-12") {
             day = "1-1";
+        } else if (parseInt(day.split("-")[0]) == lengths[day.split("-")[1]]) {
+            day = "1-" + String(parseInt(day.split("-")[1]) + 1);
         } else {
             day = String(parseInt(day.split("-")[0]) + 1) + "-" + day.split("-")[1];
         }
