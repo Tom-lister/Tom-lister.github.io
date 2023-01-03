@@ -242,10 +242,12 @@ function previous() {
         document.getElementById("rightarrow").style.opacity = 1;
         archived = true;
     } else if (day != "3-4") {
-        if (day.split("-")[0] == "1") {
-            day = String(lengths[day.split("-")[1] - 1]) + "-" + String(parseInt(day.split("-")[1]) - 1);
-        } else if (day.split("-")[1] == "1") {
-            day = String(lengths[day.split("-")[1] - 1]) + "-12";
+        if (day == "1-1") {
+            day = "31-12";
+        } else if (day.split("-")[0] == "1") {
+            if (day.split("-")[1] == "1") {
+                day = String(lengths[day.split("-")[1] - 1]) + "-12";
+            } else day = String(lengths[day.split("-")[1] - 1]) + "-" + String(parseInt(day.split("-")[1]) - 1);
         } else {
             day = String(parseInt(day.split("-")[0]) - 1) + "-" + day.split("-")[1];
         }
@@ -279,6 +281,7 @@ function next() {
 }
 
 function refresh() {
+    console.log(day);
     answer = daily[day][0];
     emoji = daily[day][1];
     number = daily[day][2];
