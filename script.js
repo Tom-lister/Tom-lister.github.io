@@ -152,7 +152,7 @@ function selectFrame(id) {
         refreshed = false;
         selected = id;
     }
-    document.getElementById("display").src = "unethiverseframes/"+answer+"/"+id+".png";
+    document.getElementById("display").src = "unethiverseframes/"+answer.replace("#","%23")+"/"+id+".png";
 };
 
 function goodEnding(frame) {
@@ -312,4 +312,4 @@ function refresh() {
     selectFrame(String(frame));
 }
 
-document.getElementById("display").src = "unethiverseframes/"+answer+"/1.png"
+document.getElementById("display").src = "unethiverseframes/"+answer.replace("#","%23")+"/1.png"
