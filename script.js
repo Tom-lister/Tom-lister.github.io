@@ -313,3 +313,9 @@ function refresh() {
 }
 
 document.getElementById("display").src = "unethiverseframes/"+answer.replace("#","%23")+"/1.png"
+
+for (i = 2; i < 7; i++)
+{
+    var img = new Image();
+    img.src = "unethiverseframes/"+answer.replace("#","%23")+"/" + i.toString() + ".png";
+}
