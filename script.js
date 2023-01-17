@@ -152,7 +152,7 @@ function selectFrame(id) {
         refreshed = false;
         selected = id;
     }
-    document.getElementById("display").src = "unethiverseframes/"+answer.replace("#","%23")+"/"+id+".png";
+    document.getElementById("display").src = "unethiverseframes/"+answer.replace("#","")+"/"+id+".png";
 };
 
 function goodEnding(frame) {
@@ -312,10 +312,10 @@ function refresh() {
     selectFrame(String(frame));
 }
 
-document.getElementById("display").src = "unethiverseframes/"+answer.replace("#","%23")+"/1.png"
+document.getElementById("display").src = "unethiverseframes/"+answer.replace("#","")+"/1.png"
 
 for (i = 2; i < 7; i++)
 {
     var img = new Image();
-    img.src = "unethiverseframes/"+answer.replace("#","%23")+"/" + i.toString() + ".png";
+    img.src = "unethiverseframes/"+answer.replace("#","")+"/" + i.toString() + ".png";
 }
