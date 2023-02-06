@@ -57,7 +57,7 @@ let daily = {
     "30-1":["What to do if a Shadow Man is following you","&#x1F31A	","53"],
     "31-1":["Watching the Truman Show for the First Time","&#x1F4FA	","54"],
     "1-2":["Percy Manthey's Outside","&#x1F3DE ","55"],
-    "2-2":["How to Check if your House is Haunted","&#x1F47B ","56"],
+    "2-2":["How To Check if your House is Haunted","&#x1F47B ","56"],
     "3-2":["Trying Cigarettes for the First Time","&#x1F6AC	","57"],
     "4-2":["Scariest GMOD Nextbot Ever","&#x1F631 ","58"],
     "5-2":["The Bunny","&#x1F407 ","59"],
