@@ -61,7 +61,8 @@ let daily = {
     "3-2":["Trying Cigarettes for the First Time","&#x1F6AC	","57"],
     "4-2":["Scariest GMOD Nextbot Ever","&#x1F631 ","58"],
     "5-2":["The Bunny","&#x1F407 ","59"],
-    "6-2":["Imagine (MadD G)","&#x1F476	","60"]
+    "6-2":["Imagine (MadD G)","&#x1F476	","60"],
+    "7-2":["Halloween III - Season of the Witch (1982)"]
 }
 let congrats = {
     1:"Gyro Genius (1/6)",
