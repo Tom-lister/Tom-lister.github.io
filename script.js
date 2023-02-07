@@ -62,7 +62,7 @@ let daily = {
     "4-2":["Scariest GMOD Nextbot Ever","&#x1F631 ","58"],
     "5-2":["The Bunny","&#x1F407 ","59"],
     "6-2":["Imagine (MadD G)","&#x1F476	","60"],
-    "7-2":["The Princess Diaries 2 - Royal Engagement (2004)"]
+    "7-2":["The Princess Diaries 2 - Royal Engagement (2004)","&#x1F478","61"]
 }
 let congrats = {
     1:"Gyro Genius (1/6)",
