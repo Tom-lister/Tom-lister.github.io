@@ -62,7 +62,7 @@ let daily = {
     "4-2":["Scariest GMOD Nextbot Ever","&#x1F631 ","58"],
     "5-2":["The Bunny","&#x1F407 ","59"],
     "6-2":["Imagine (MadD G)","&#x1F476	","60"],
-    "7-2":["Halloween III - Season of the Witch (1982)"]
+    "7-2":["The Princess Diaries 2 - Royal Engagement (2004)"]
 }
 let congrats = {
     1:"Gyro Genius (1/6)",
@@ -73,9 +73,12 @@ let congrats = {
     6:"TLPlays Terrible (6/6)"
 };
 
-const d = new Date( new Date().getTime());
-let day = d.getDate() + "-" + (d.getMonth()+1);
-let currentday = d.getDate() + "-" + (d.getMonth()+1);
+//const d = new Date( new Date().getTime());
+//let day = d.getDate() + "-" + (d.getMonth()+1);
+//let currentday = d.getDate() + "-" + (d.getMonth()+1);
+
+let day = "7-2"
+let currentday = "7-2"
 
 const lengths = {1:31,2:28,3:31,4:30,5:31,6:30,7:31,8:31,9:30,10:31,11:30,12:31};
 //Code does not account for leap years!
