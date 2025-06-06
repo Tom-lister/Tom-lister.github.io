@@ -1,0 +1,109 @@
+.post {
+    width: calc(100% - 20px);
+    overflow: auto;
+    padding: 12px;
+    padding-top: 0px;
+    padding-bottom: 16px;
+    position: relative;
+}
+
+.post p {
+    color: white;
+}
+
+.post-left {
+    float: left;
+    width: 40px;
+    margin-right: 8px;
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+}
+
+.post-left img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+}
+
+.connector {
+    background-color: #5c7e98;
+    width: 2px;
+    height: calc(100% - 44px);
+    margin: auto;
+}
+
+.post-right {
+    float:right;
+    width: calc(100% - 50px);
+}
+
+.post-right * {
+    margin-right: 4px;
+    margin-top: 0;
+    margin-bottom: 2px;
+    margin-left: 0;
+}
+
+.post-right p {
+    font-size: 14px;
+}
+
+.body img {
+    width: calc(100% - 6px);
+    margin-top: 4px;
+}
+
+.header {
+    overflow: auto;
+    height: auto;
+}
+
+.header p {
+    float:left;
+}
+
+.header p:nth-child(1) {
+    font-weight: bold;
+}
+
+.header p:nth-child(2) {
+    color: #9c9999;
+}
+
+.header img {
+    float:left;
+    height: 14px;
+    margin-right: 4px;
+}
+
+.body {
+    margin-bottom: 8px;
+}
+
+.options {
+    overflow: auto;
+}
+
+.options div {
+    float: left;
+    overflow: auto;
+    line-height: 20px;
+}
+.options div:not(:last-child) {
+    margin-right: 7px;
+}
+
+.options div:last-child {
+    float:right;
+}
+
+.options div * {
+    float: left;
+    vertical-align: center;
+}
+
+.options img {
+    height: 20px;
+}

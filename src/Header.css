@@ -1,0 +1,41 @@
+#header {
+    background-color: #060e15;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 2px;
+    height: 70px;
+    margin-bottom: 18px;
+}
+
+#header img {
+    position: absolute;
+}
+
+#mainpfp {
+    border-radius: 50%;
+    height: 38px;
+    left:4%;
+    top:17px;
+}
+
+#logo {
+    height: 60px;
+    left: calc(50% - 30px);
+    right: calc(50% - 30px);
+    bottom:10px;
+}
+
+#settings {
+    height: 38px;
+    right:4%;
+    top:17px;
+}
+
+#upper-divider {
+    position: absolute;
+    background-color: #5c7e98;
+    height: 3px;
+    width: 100%;
+    bottom: 0px;
+}
