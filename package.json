@@ -2,6 +2,7 @@
   "name": "town-square",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://tom-lister.github.io",
   "type": "module",
   "scripts": {
     "dev": "vite",
