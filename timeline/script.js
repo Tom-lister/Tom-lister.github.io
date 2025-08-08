@@ -76,7 +76,7 @@ const groups = [
     name: "The Sketch 7(p)",
     year: 2014,
     y: 300,
-    x: 18,
+    x: 24,
   },
   {
     name: "The Corridor",
@@ -121,7 +121,7 @@ const people = [
     name: "Dami",
     year: 2014,
     y: 500,
-    x: 30,
+    x: 38,
   },
   {
     name: "Duja",
