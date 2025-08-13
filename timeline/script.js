@@ -17,15 +17,15 @@ const years = [
   },
   {
     year: 2014,
-    height: 700,
+    height: 800,
   },
   {
     year: 2015,
-    height: 400,
+    height: 320,
   },
   {
     year: 2016,
-    height: 400,
+    height: 100,
   },
   {
     year: 2017,
@@ -41,7 +41,7 @@ const years = [
   },
   {
     year: 2020,
-    height: 250,
+    height: 350,
   },
   {
     year: 2021,
@@ -70,12 +70,24 @@ const groups = [
     name: "Bus",
     year: 2014,
     y: 0,
-    x: -18,
+    x: -25,
   },
   {
     name: "The Sketch 7(p)",
     year: 2014,
     y: 300,
+    x: 25,
+  },
+  {
+    name: "Puzzle Soc",
+    year: 2014,
+    y: 520,
+    x: -24,
+  },
+  {
+    name: "BFI Filmmaking",
+    year: 2015,
+    y: 0,
     x: 24,
   },
   {
@@ -84,44 +96,98 @@ const groups = [
     y: 0,
     x: 24,
   },
+  {
+    name: "Worldover",
+    year: 2025,
+    y: 0,
+    x: -22,
+  },
 ];
 
 const people = [
   {
+    name: "Matthew",
+    year: 2012,
+    y: 120,
+    x: 15,
+  },
+  {
     name: "Adam",
     year: 2012,
     y: 250,
-    x: -15,
+    x: -12,
   },
   {
     name: "Jamie",
     year: 2013,
     y: 100,
-    x: 12,
+    x: 10,
   },
   {
     name: "Josef",
     year: 2013,
     y: 380,
-    x: 18,
+    x: 20,
   },
   {
     name: "Rahil",
     year: 2014,
     y: 200,
-    x: -30,
+    x: -40,
+  },
+  {
+    name: "Felix",
+    year: 2014,
+    y: 200,
+    x: -28,
   },
   {
     name: "Jolie",
     year: 2014,
     y: 200,
-    x: -12,
+    x: -16,
   },
   {
     name: "Dami",
     year: 2014,
     y: 500,
+    x: 34,
+  },
+  {
+    name: "Emerson",
+    year: 2014,
+    y: 720,
+    x: -24,
+  },
+  {
+    name: "Meigan",
+    year: 2014,
+    y: 720,
+    x: -10,
+  },
+  {
+    name: "Will",
+    year: 2014,
+    y: 910,
+    x: -31,
+  },
+  {
+    name: "Cosmo",
+    year: 2014,
+    y: 910,
+    x: -17,
+  },
+  {
+    name: "Riley",
+    year: 2015,
+    y: 210,
     x: 38,
+  },
+  {
+    name: "Angus",
+    year: 2015,
+    y: 400,
+    x: 31,
   },
   {
     name: "Duja",
@@ -130,9 +196,15 @@ const people = [
     x: 15,
   },
   {
+    name: "Jai",
+    year: 2019,
+    y: 250,
+    x: 15,
+  },
+  {
     name: "Bex",
     year: 2020,
-    y: 270,
+    y: 450,
     x: -15,
   },
   {
@@ -174,8 +246,26 @@ const people = [
   {
     name: "Val",
     year: 2023,
-    y: 400,
-    x: 15,
+    y: 450,
+    x: -15,
+  },
+  {
+    name: "Tom",
+    year: 2025,
+    y: 190,
+    x: -32,
+  },
+  {
+    name: "Corey",
+    year: 2025,
+    y: 190,
+    x: -22,
+  },
+  {
+    name: "Sean",
+    year: 2025,
+    y: 190,
+    x: -12,
   },
 ];
 
