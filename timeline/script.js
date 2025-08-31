@@ -124,7 +124,7 @@ const people = [
     x: -12,
   },
   {
-    name: "Jamie",
+    name: "Ash",
     year: 2013,
     y: 190,
     x: 12,
