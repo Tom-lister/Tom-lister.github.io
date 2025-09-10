@@ -1,7 +1,7 @@
 const years = [
   {
     year: 2010,
-    height: 400,
+    height: 150,
   },
   {
     year: 2011,
@@ -17,7 +17,7 @@ const years = [
   },
   {
     year: 2014,
-    height: 800,
+    height: 750,
   },
   {
     year: 2015,
@@ -53,15 +53,15 @@ const years = [
   },
   {
     year: 2023,
-    height: 400,
+    height: 450,
   },
   {
     year: 2024,
-    height: 400,
+    height: 300,
   },
   {
     year: 2025,
-    height: 400,
+    height: 300,
   },
 ];
 
@@ -87,7 +87,7 @@ const groups = [
   {
     name: "Puzzle Soc",
     year: 2014,
-    y: 520,
+    y: 620,
     x: -24,
   },
   {
@@ -103,6 +103,18 @@ const groups = [
     x: 24,
   },
   {
+    name: "CompSci Crew",
+    year: 2022,
+    y: 0,
+    x: -22,
+  },
+  {
+    name: "The Brighton Gang",
+    year: 2024,
+    y: 50,
+    x: 22,
+  },
+  {
     name: "Worldover",
     year: 2025,
     y: 0,
@@ -112,22 +124,34 @@ const groups = [
 
 const people = [
   {
+    name: "Liv",
+    year: 2010,
+    y: 150,
+    x: -15,
+  },
+  {
     name: "Matthew",
     year: 2012,
     y: 120,
-    x: 15,
+    x: 18,
   },
   {
     name: "Adam",
     year: 2012,
     y: 250,
-    x: -12,
+    x: -15,
   },
   {
     name: "Ash",
     year: 2013,
     y: 190,
     x: 12,
+  },
+  {
+    name: "Rex",
+    year: 2013,
+    y: 190,
+    x: 22,
   },
   {
     name: "Josef",
@@ -154,34 +178,76 @@ const people = [
     x: -16,
   },
   {
-    name: "Dami",
+    name: "Cameron",
+    year: 2014,
+    y: 500,
+    x: 10,
+  },
+  {
+    name: "Sameer",
+    year: 2014,
+    y: 500,
+    x: 22,
+  },
+  {
+    name: "Kerim",
     year: 2014,
     y: 500,
     x: 34,
   },
   {
+    name: "Kieran",
+    year: 2014,
+    y: 690,
+    x: 16,
+  },
+  {
+    name: "Dami",
+    year: 2014,
+    y: 690,
+    x: 28,
+  },
+  {
+    name: "Trix",
+    year: 2014,
+    y: 820,
+    x: -38,
+  },
+  {
     name: "Emerson",
     year: 2014,
-    y: 720,
+    y: 820,
     x: -24,
   },
   {
     name: "Meigan",
     year: 2014,
-    y: 720,
+    y: 820,
     x: -10,
   },
   {
     name: "Will",
     year: 2014,
-    y: 910,
+    y: 1010,
     x: -31,
   },
   {
     name: "Cosmo",
     year: 2014,
-    y: 910,
+    y: 1010,
     x: -17,
+  },
+  {
+    name: "Percy",
+    year: 2015,
+    y: 210,
+    x: 10,
+  },
+  {
+    name: "Jake",
+    year: 2015,
+    y: 210,
+    x: 24,
   },
   {
     name: "Riley",
@@ -189,6 +255,12 @@ const people = [
     y: 210,
     x: 38,
   },
+  // {
+  //   name: "Joseph",
+  //   year: 2015,
+  //   y: 400,
+  //   x: 17,
+  // },
   {
     name: "Angus",
     year: 2015,
@@ -198,14 +270,33 @@ const people = [
   {
     name: "Duja",
     year: 2018,
-    y: 130,
-    x: 15,
+    y: 150,
+    x: 18,
   },
   {
     name: "Jai",
     year: 2019,
-    y: 250,
-    x: 15,
+    y: 180,
+    x: 12,
+  },
+  {
+    name: "Chanan",
+    year: 2019,
+    y: 370,
+    x: -12,
+  },
+  {
+    name: "Hannah K",
+    displayName: "Hannah",
+    year: 2019,
+    y: 440,
+    x: 22,
+  },
+  {
+    name: "Ryan",
+    year: 2020,
+    y: 100,
+    x: -22,
   },
   {
     name: "Bex",
@@ -246,14 +337,74 @@ const people = [
   {
     name: "Isi",
     year: 2022,
-    y: 220,
-    x: 10,
+    y: 190,
+    x: -33,
+  },
+  {
+    name: "Faiza",
+    year: 2022,
+    y: 190,
+    x: -19,
+  },
+  {
+    name: "Andy",
+    year: 2022,
+    y: 380,
+    x: -26,
+  },
+  {
+    name: "Sam",
+    year: 2022,
+    y: 380,
+    x: -12,
+  },
+  {
+    name: "Jacob",
+    year: 2023,
+    y: 100,
+    x: 20,
+  },
+  {
+    name: "Josh",
+    year: 2023,
+    y: 240,
+    x: -20,
+  },
+  {
+    name: "Milo",
+    year: 2023,
+    y: 260,
+    x: 12,
+  },
+  {
+    name: "Lucas",
+    year: 2023,
+    y: 400,
+    x: -12,
   },
   {
     name: "Val",
     year: 2023,
-    y: 450,
-    x: -15,
+    y: 460,
+    x: 26,
+  },
+  {
+    name: "Billie",
+    year: 2024,
+    y: 240,
+    x: 12,
+  },
+  {
+    name: "Theo",
+    year: 2024,
+    y: 240,
+    x: 22,
+  },
+  {
+    name: "Wren",
+    year: 2024,
+    y: 240,
+    x: 32,
   },
   {
     name: "Tom",
@@ -272,6 +423,12 @@ const people = [
     year: 2025,
     y: 190,
     x: -12,
+  },
+  {
+    name: "Hannah",
+    year: 2025,
+    y: 350,
+    x: 15,
   },
 ];
 
@@ -362,7 +519,7 @@ function addPeople() {
     personDiv.appendChild(image);
 
     const name = document.createElement("p");
-    name.innerHTML = person.name;
+    name.innerHTML = person.displayName ?? person.name;
     personDiv.appendChild(name);
 
     document.body.appendChild(personDiv);
