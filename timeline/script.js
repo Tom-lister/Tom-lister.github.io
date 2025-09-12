@@ -17,7 +17,7 @@ const years = [
   },
   {
     year: 2014,
-    height: 750,
+    height: 1000,
   },
   {
     year: 2015,
@@ -53,11 +53,11 @@ const years = [
   },
   {
     year: 2023,
-    height: 360,
+    height: 300,
   },
   {
     year: 2024,
-    height: 400,
+    height: 360,
   },
   {
     year: 2025,
@@ -70,7 +70,7 @@ const groups = [
     name: "Scouts",
     year: 2013,
     y: 0,
-    x: 22,
+    x: 24,
   },
   {
     name: "Bus",
@@ -118,7 +118,7 @@ const groups = [
     name: "Worldover",
     year: 2025,
     y: 50,
-    x: -22,
+    x: -24,
   },
 ];
 
@@ -151,13 +151,13 @@ const people = [
     name: "Rex",
     year: 2013,
     y: 190,
-    x: 22,
+    x: 24,
   },
   {
     name: "Josef",
     year: 2013,
     y: 190,
-    x: 32,
+    x: 36,
   },
   {
     name: "Rahil",
@@ -361,31 +361,31 @@ const people = [
   {
     name: "Jacob",
     year: 2023,
-    y: 100,
-    x: 22,
+    y: 140,
+    x: 14,
   },
   {
     name: "Milo",
     year: 2023,
-    y: 250,
-    x: 12,
+    y: 260,
+    x: 28,
   },
   {
     name: "Val",
     year: 2023,
-    y: 380,
-    x: -14,
+    y: 320,
+    x: -18,
   },
   {
     name: "Josh",
     year: 2024,
-    y: 180,
-    x: -26,
+    y: 160,
+    x: -28,
   },
   {
     name: "Lucas",
     year: 2024,
-    y: 290,
+    y: 270,
     x: -16,
   },
   {
@@ -410,13 +410,13 @@ const people = [
     name: "Tom",
     year: 2025,
     y: 240,
-    x: -32,
+    x: -36,
   },
   {
     name: "Corey",
     year: 2025,
     y: 240,
-    x: -22,
+    x: -24,
   },
   {
     name: "Sean",
