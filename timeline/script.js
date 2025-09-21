@@ -255,12 +255,12 @@ const people = [
     y: 210,
     x: 38,
   },
-  // {
-  //   name: "Joseph",
-  //   year: 2015,
-  //   y: 400,
-  //   x: 17,
-  // },
+  {
+    name: "Joseph",
+    year: 2015,
+    y: 400,
+    x: 17,
+  },
   {
     name: "Angus",
     year: 2015,
