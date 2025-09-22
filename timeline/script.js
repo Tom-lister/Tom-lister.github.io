@@ -112,7 +112,7 @@ const groups = [
     name: "The Brighton Gang",
     year: 2024,
     y: 210,
-    x: 22,
+    x: 24,
   },
   {
     name: "Worldover",
@@ -268,6 +268,18 @@ const people = [
     x: 31,
   },
   {
+    name: "Aleks",
+    year: 2017,
+    y: 100,
+    x: -15,
+  },
+  {
+    name: "Ashleigh",
+    year: 2017,
+    y: 300,
+    x: 12,
+  },
+  {
     name: "Duja",
     year: 2018,
     y: 150,
@@ -398,13 +410,13 @@ const people = [
     name: "Theo",
     year: 2024,
     y: 400,
-    x: 22,
+    x: 24,
   },
   {
     name: "Wren",
     year: 2024,
     y: 400,
-    x: 32,
+    x: 36,
   },
   {
     name: "Tom",
