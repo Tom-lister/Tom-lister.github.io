@@ -452,11 +452,17 @@ window.onload = () => {
 
 function addYears() {
   const lineDiv = document.getElementById("line");
+  let setRandomiserButton = false;
   years.forEach((yearInfo) => {
     const yearDiv = document.createElement("div");
     yearDiv.classList.add("yearDiv");
     yearDiv.style.marginBottom = `${yearInfo.height}px`;
     yearDiv.id = yearInfo.year.toString();
+
+    if (!setRandomiserButton) {
+      yearDiv.addEventListener("click", randomise);
+      setRandomiserButton = true;
+    }
 
     const year = document.createElement("p");
     year.classList.add("year");
@@ -494,8 +500,21 @@ function addGroups() {
   });
 }
 
-function addPeople() {
-  people.forEach((person) => {
+function addPeople(randomise = false) {
+  console.log(randomise);
+  const orderedPeople = people;
+  if (randomise) {
+    const names = people.map((person) => ({
+      name: person.name,
+      displayName: person.displayName,
+    }));
+    const shuffledNames = names.sort(() => 0.5 - Math.random());
+    for (let i = 0; i < orderedPeople.length; i++) {
+      orderedPeople[i].name = shuffledNames[i].name;
+      orderedPeople[i].displayName = shuffledNames[i].displayName;
+    }
+  }
+  orderedPeople.forEach((person) => {
     let topDistance = 40;
     for (const yearInfo of years) {
       if (person.year === yearInfo.year) {
@@ -503,7 +522,7 @@ function addPeople() {
       }
       const yearDiv = document.getElementById(yearInfo.year.toString());
       topDistance += yearDiv.clientHeight;
-      topDistance += 10; //padding
+      topDistance += randomise ? 0 : 10; //padding
       topDistance += yearInfo.height;
     }
     topDistance += person.y;
@@ -536,4 +555,14 @@ function addPeople() {
 
     document.body.appendChild(personDiv);
   });
+}
+
+function randomise() {
+  const children = document.body.children;
+  for (let i = children.length - 1; i > 0; i--) {
+    if (children[i].className == "person") {
+      children[i].remove();
+    }
+  }
+  addPeople(true);
 }
