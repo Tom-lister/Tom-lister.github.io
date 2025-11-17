@@ -1,0 +1,152 @@
+body {
+  background-color: #516078;
+  padding-top: 1px;
+  margin-left: 0;
+}
+
+#everything {
+  text-align: center;
+}
+
+#topbar {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+#topbar img {
+  width: 30px;
+  height: 30px;
+  margin: 8px;
+}
+
+h1 {
+  display: inline-block;
+  color: white;
+  font-family: "Tahoma", sans-serif;
+  font-size: 40px;
+  margin-bottom: 22px;
+}
+
+h1 span {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: black;
+  border-color: lawngreen;
+  border-style: solid;
+}
+
+input {
+  border-radius: 10px;
+  margin-top: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
+  font-family: "Tahoma", sans-serif;
+  font-size: 20px;
+  text-indent: 15px;
+}
+
+select {
+  appearance: none;
+}
+
+h2 {
+  color: white;
+  font-family: "Tahoma", sans-serif;
+  font-size: 15px;
+}
+
+p {
+  color: white;
+  font-family: "Tahoma", sans-serif;
+  line-height: 20%;
+}
+
+.arrow {
+  height: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+#rightarrow {
+  opacity: 0.3;
+}
+
+#display {
+  max-width: 80%;
+  width: 480px;
+  height: fit-content;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
+  margin: auto;
+  overflow: hidden;
+}
+
+#display img {
+  width: 100%;
+}
+
+#entry {
+  max-width: 80%;
+  width: 480px;
+  margin: auto;
+  display: flex;
+  gap: 3px;
+}
+
+.textbox {
+  margin-top: 8px;
+  display: inline-block;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
+}
+
+.textbox p {
+  text-align: left;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.guess {
+  width: 100%;
+}
+
+#guesses {
+  margin: auto;
+  margin-bottom: 80px;
+  max-width: 80%;
+  width: 480px;
+}
+
+#bottom {
+  background-color: #212121;
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  bottom: 0;
+  position: fixed;
+}
+
+#bottom a {
+  text-decoration: none;
+}
+
+#bottom p {
+  color: lightgray;
+}
+
+.outcomebox {
+  flex-grow: 1;
+}
+
+#copybox {
+  cursor: pointer;
+}
+
+#copybox p {
+  text-align: center;
+}

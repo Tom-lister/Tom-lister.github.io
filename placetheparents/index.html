@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Place the Parents!</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="everything">
+      <div id="topbar">
+        <img
+          class="arrow"
+          id="leftarrow"
+          src="./chevron.png"
+          style="transform: scaleX(-1)"
+          onclick="previous()"
+        />
+        <h1>Place the Parents!</h1>
+        <img
+          class="arrow"
+          id="rightarrow"
+          src="./chevron.png"
+          onclick="next()"
+        />
+      </div>
+
+      <div id="display">
+        <img src="" />
+      </div>
+      <br />
+
+      <div id="entry">
+        <input
+          list=""
+          id="film-guess"
+          name="film-guess"
+          placeholder="Search for a country..."
+          onkeyup="check(event)"
+        />
+        <br />
+      </div>
+
+      <datalist id="country-names"></datalist>
+
+      <div id="guesses"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
