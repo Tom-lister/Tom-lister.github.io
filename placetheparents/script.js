@@ -4,13 +4,21 @@ let selected = 1;
 let daily = {
   "19-11": ["portugal1.jpeg", "1", "Portugal"],
   "20-11": ["algeria1.jpg", "2", "Algeria"],
-  "21-11": ["tunisia.jpg", "3", "Tunisia"],
+  "21-11": ["namibia1.jpg", "3", "Namibia"],
+  "22-11": ["france1.webp", "4", "France"],
+  "23-11": ["tunisia.jpg", "5", "Tunisia"],
+  "24-11": ["unitedStates1.jpg", "6", "United States"],
+  "25-11": ["norway1.jpg", "6", "Norway"],
+  "26-11": ["switzerland1.jpg", "7", "Switzerland"],
+  "27-11": ["morocco1.jpg", "8", "Morocco"],
+  "28-11": ["italy1.jpg", "9", "Italy"],
+  "29-11": ["portugal2.jpg", "10", "Portugal"],
 };
 let blurPerStage = {
   1: 50,
-  2: 30,
-  3: 16,
-  4: 8,
+  2: 25,
+  3: 10,
+  4: 3,
   5: 0,
 };
 let countries = [
@@ -1238,10 +1246,8 @@ let countries = [
 
 const d = new Date(new Date().getTime());
 let day = d.getDate() + "-" + (d.getMonth() + 1);
-//let day = "21-11";
+//let day = "29-11";
 let currentday = day;
-
-console.log(currentday);
 
 const lengths = {
   //Code does not account for leap years!
@@ -1298,10 +1304,12 @@ function check(e) {
   }
   if (e.keyCode == 13 && !finished) {
     field.setAttribute("list", "");
-    let guess = field.value;
+    let guess = field.value.toLowerCase();
     field.value = "";
 
-    let guessEntry = countries.find((entry) => entry.country == guess);
+    let guessEntry = countries.find(
+      (entry) => entry.country.toLowerCase() == guess
+    );
     if (!guessEntry) return;
 
     let guessbox = document.createElement("div");
@@ -1309,7 +1317,7 @@ function check(e) {
     guessbox.classList.add("guess");
     let guesstext = document.createElement("p");
 
-    if (guess == country) {
+    if (guess == country.toLowerCase()) {
       goodEnding(stage);
       document.getElementById("display").style.borderColor = "lawngreen";
       guesstext.innerHTML = `&#9989 ${guess}`;
@@ -1376,12 +1384,11 @@ function badEnding() {
   let failurebox = document.createElement("div");
   failurebox.classList.add("textbox");
   failurebox.classList.add("outcomebox");
-  failurebox.style.marginTop = "12px";
   let failuretext = document.createElement("p");
   let failurebold = document.createElement("strong");
   failurebold.innerHTML = country;
   failuretext.append(failurebold);
-  failuretext.style.lineHeight = "90%";
+  failuretext.style.lineHeight = "normal";
   failuretext.style.color = "red";
   failurebox.append(failuretext);
   let newline = document.createElement("br");
@@ -1416,7 +1423,7 @@ function copyText() {
         "\n🚐 " +
         "🟥".repeat(stage - 1) +
         "🟩" +
-        "⬛".repeat(6 - stage)
+        "⬛".repeat(5 - stage)
     );
   } else {
     navigator.clipboard.writeText(
@@ -1424,7 +1431,7 @@ function copyText() {
         number +
         (archived ? " (Replay)" : "") +
         "\n🚐 " +
-        "🟥🟥🟥🟥🟥🟥"
+        "🟥🟥🟥🟥🟥"
     );
   }
   document.getElementById("copybox").children[0].innerHTML = "Copied!";
@@ -1434,23 +1441,23 @@ function copyText() {
 }
 
 function previous() {
-  if (day != "19-11") {
-    if (day == "1-1") {
-      day = "31-12";
-    } else if (day.split("-")[0] == "1") {
-      if (day.split("-")[1] == "1") {
-        day = String(lengths[day.split("-")[1] - 1]) + "-12";
-      } else
-        day =
-          String(lengths[day.split("-")[1] - 1]) +
-          "-" +
-          String(parseInt(day.split("-")[1]) - 1);
-    } else {
-      day = String(parseInt(day.split("-")[0]) - 1) + "-" + day.split("-")[1];
-    }
-    document.getElementById("rightarrow").style.opacity = 1;
-    archived = true;
+  if (day == "19-11") return;
+
+  if (day == "1-1") {
+    day = "31-12";
+  } else if (day.split("-")[0] == "1") {
+    if (day.split("-")[1] == "1") {
+      day = String(lengths[day.split("-")[1] - 1]) + "-12";
+    } else
+      day =
+        String(lengths[day.split("-")[1] - 1]) +
+        "-" +
+        String(parseInt(day.split("-")[1]) - 1);
+  } else {
+    day = String(parseInt(day.split("-")[0]) - 1) + "-" + day.split("-")[1];
   }
+  document.getElementById("rightarrow").style.opacity = 1;
+  archived = true;
   if (day == "19-11") {
     document.getElementById("leftarrow").style.opacity = 0.3;
   }
@@ -1458,16 +1465,16 @@ function previous() {
 }
 
 function next() {
-  if (day != currentday) {
-    if (day == "31-12") {
-      day = "1-1";
-    } else if (parseInt(day.split("-")[0]) == lengths[day.split("-")[1]]) {
-      day = "1-" + String(parseInt(day.split("-")[1]) + 1);
-    } else {
-      day = String(parseInt(day.split("-")[0]) + 1) + "-" + day.split("-")[1];
-    }
-    document.getElementById("leftarrow").style.opacity = 1;
+  if (day == currentday) return;
+
+  if (day == "31-12") {
+    day = "1-1";
+  } else if (parseInt(day.split("-")[0]) == lengths[day.split("-")[1]]) {
+    day = "1-" + String(parseInt(day.split("-")[1]) + 1);
+  } else {
+    day = String(parseInt(day.split("-")[0]) + 1) + "-" + day.split("-")[1];
   }
+  document.getElementById("leftarrow").style.opacity = 1;
   if (day == currentday) {
     document.getElementById("rightarrow").style.opacity = 0.3;
     archived = false;
@@ -1476,8 +1483,9 @@ function next() {
 }
 
 function refresh() {
-  country = daily[day][2];
+  image = daily[day][0];
   number = daily[day][1];
+  country = daily[day][2];
   if (finished) {
     let entry = document.getElementById("entry");
     entry.innerHTML = "";

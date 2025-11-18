@@ -11,6 +11,8 @@ body {
 #topbar {
   display: flex;
   align-items: center;
+  width: fit-content;
+  margin: auto;
   margin-bottom: 5px;
 }
 
@@ -141,6 +143,10 @@ p {
 
 .outcomebox {
   flex-grow: 1;
+}
+
+.outcomebox p {
+  text-align: center;
 }
 
 #copybox {
