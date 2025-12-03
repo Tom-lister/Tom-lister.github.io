@@ -17,6 +17,10 @@ let daily = {
   "1-12": ["ladakh1.jpg", "12", "India"],
   "2-12": ["zambia1.jpg", "13", "Zambia"],
   "3-12": ["canada1.jpg", "14", "Canada"],
+  "4-12": ["oman1.jpg", "15", "Oman"],
+  "5-12": ["norway2.jpg", "16", "Norway"],
+  "6-12": ["england1.jpg", "17", "United Kingdom"],
+  //UNUSED: oman2.jpg, england2.jpg
 };
 let blurPerStage = {
   1: 50,
