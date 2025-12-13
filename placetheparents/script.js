@@ -1259,8 +1259,8 @@ let countries = [
 ];
 
 const d = new Date(new Date().getTime());
-let day = d.getDate() + "-" + (d.getMonth() + 1);
-//let day = "29-11";
+//let day = d.getDate() + "-" + (d.getMonth() + 1);
+let day = "13-12";
 let currentday = day;
 
 const lengths = {
