@@ -1,11 +1,11 @@
 const years = [
   {
     year: 2010,
-    height: 150,
+    height: 180,
   },
   {
     year: 2011,
-    height: 400,
+    height: 380,
   },
   {
     year: 2012,
@@ -61,7 +61,7 @@ const years = [
   },
   {
     year: 2025,
-    height: 300,
+    height: 1000,
   },
 ];
 
@@ -81,7 +81,7 @@ const groups = [
   {
     name: "The Sketch 7(p)",
     year: 2014,
-    y: 300,
+    y: 270,
     x: 25,
   },
   {
@@ -126,14 +126,38 @@ const people = [
   {
     name: "Liv",
     year: 2010,
-    y: 150,
-    x: -15,
+    y: 120,
+    x: -12,
+  },
+  {
+    name: "Rose",
+    year: 2011,
+    y: 120,
+    x: -18,
+  },
+  {
+    name: "Leo",
+    year: 2011,
+    y: 420,
+    x: -12,
+  },
+  {
+    name: "Isaac",
+    year: 2011,
+    y: 280,
+    x: 12,
+  },
+  {
+    name: "Hamish",
+    year: 2011,
+    y: 350,
+    x: 24,
   },
   {
     name: "Matthew",
     year: 2012,
     y: 120,
-    x: 18,
+    x: 15,
   },
   {
     name: "Adam",
@@ -156,7 +180,7 @@ const people = [
   {
     name: "Josef",
     year: 2013,
-    y: 190,
+    y: 210,
     x: 36,
   },
   {
@@ -178,34 +202,58 @@ const people = [
     x: -16,
   },
   {
+    name: "Cat",
+    year: 2014,
+    y: 390,
+    x: -34,
+  },
+  {
+    name: "Trixie",
+    year: 2014,
+    y: 390,
+    x: -22,
+  },
+  {
+    name: "Elif",
+    year: 2014,
+    y: 390,
+    x: -10,
+  },
+  {
     name: "Cameron",
     year: 2014,
-    y: 500,
+    y: 470,
     x: 10,
   },
   {
     name: "Sameer",
     year: 2014,
-    y: 500,
+    y: 470,
     x: 22,
   },
   {
     name: "Kerim",
     year: 2014,
-    y: 500,
+    y: 470,
     x: 34,
   },
   {
     name: "Kieran",
     year: 2014,
-    y: 690,
+    y: 660,
     x: 16,
   },
   {
     name: "Dami",
     year: 2014,
-    y: 690,
+    y: 660,
     x: 28,
+  },
+  {
+    name: "Joe",
+    year: 2014,
+    y: 660,
+    x: 40,
   },
   {
     name: "Trix",
@@ -236,6 +284,18 @@ const people = [
     year: 2014,
     y: 1010,
     x: -17,
+  },
+  {
+    name: "Kai",
+    year: 2014,
+    y: 940,
+    x: 12,
+  },
+  {
+    name: "Leon",
+    year: 2014,
+    y: 980,
+    x: 24,
   },
   {
     name: "Percy",
@@ -271,13 +331,19 @@ const people = [
     name: "Aleks",
     year: 2017,
     y: 100,
-    x: -15,
+    x: -12,
   },
   {
     name: "Ashleigh",
     year: 2017,
     y: 300,
     x: 12,
+  },
+  {
+    name: "Riz",
+    year: 2017,
+    y: 440,
+    x: -18,
   },
   {
     name: "Duja",
@@ -288,7 +354,7 @@ const people = [
   {
     name: "Jai",
     year: 2019,
-    y: 180,
+    y: 220,
     x: 12,
   },
   {
@@ -309,6 +375,12 @@ const people = [
     year: 2020,
     y: 100,
     x: -22,
+  },
+  {
+    name: "Georgina",
+    year: 2020,
+    y: 250,
+    x: 15,
   },
   {
     name: "Bex",
@@ -441,6 +513,12 @@ const people = [
     year: 2025,
     y: 400,
     x: 15,
+  },
+  {
+    name: "Delta",
+    year: 2025,
+    y: 800,
+    x: 22,
   },
 ];
 
