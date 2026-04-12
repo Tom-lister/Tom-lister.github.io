@@ -13,7 +13,7 @@ const years = [
   },
   {
     year: 2013,
-    height: 250,
+    height: 200,
   },
   {
     year: 2014,
@@ -144,13 +144,13 @@ const people = [
   {
     name: "Isaac",
     year: 2011,
-    y: 280,
+    y: 240,
     x: 12,
   },
   {
     name: "Hamish",
     year: 2011,
-    y: 350,
+    y: 310,
     x: 24,
   },
   {
@@ -168,19 +168,19 @@ const people = [
   {
     name: "Ash",
     year: 2013,
-    y: 190,
+    y: 200,
     x: 12,
   },
   {
     name: "Rex",
     year: 2013,
-    y: 190,
+    y: 200,
     x: 24,
   },
   {
     name: "Josef",
     year: 2013,
-    y: 210,
+    y: 200,
     x: 36,
   },
   {
