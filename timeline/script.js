@@ -509,6 +509,24 @@ const people = [
     x: -12,
   },
   {
+    name: "Alisha",
+    year: 2025,
+    y: 430,
+    x: -30,
+  },
+  {
+    name: "Shereen",
+    year: 2025,
+    y: 430,
+    x: -18,
+  },
+  // {
+  //   name: "Hersha",
+  //   year: 2025,
+  //   y: 620,
+  //   x: -24,
+  // },
+  {
     name: "Hannah",
     year: 2025,
     y: 400,
