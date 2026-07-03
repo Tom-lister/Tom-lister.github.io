@@ -61,6 +61,10 @@ const years = [
   },
   {
     year: 2025,
+    height: 900,
+  },
+  {
+    year: 2026,
     height: 1000,
   },
 ];
@@ -342,14 +346,20 @@ const people = [
   {
     name: "Riz",
     year: 2017,
-    y: 440,
-    x: -18,
+    y: 460,
+    x: -16,
   },
   {
     name: "Duja",
     year: 2018,
     y: 150,
     x: 18,
+  },
+  {
+    name: "Jack",
+    year: 2019,
+    y: 100,
+    x: -19,
   },
   {
     name: "Jai",
@@ -360,7 +370,7 @@ const people = [
   {
     name: "Chanan",
     year: 2019,
-    y: 370,
+    y: 380,
     x: -12,
   },
   {
@@ -492,6 +502,7 @@ const people = [
   },
   {
     name: "Tom",
+    displayName: "Tom R",
     year: 2025,
     y: 240,
     x: -36,
@@ -520,22 +531,60 @@ const people = [
     y: 430,
     x: -18,
   },
-  // {
-  //   name: "Hersha",
-  //   year: 2025,
-  //   y: 620,
-  //   x: -24,
-  // },
+  //
+  {
+    name: "Hersha",
+    year: 2025,
+    y: 620,
+    x: -24,
+  },
+  {
+    name: "Zeno",
+    year: 2025,
+    y: 620,
+    x: -12,
+  },
+  {
+    name: "Tom C",
+    year: 2025,
+    y: 810,
+    x: -30,
+  },
+  {
+    name: "Jed",
+    year: 2025,
+    y: 810,
+    x: -18,
+  },
+  {
+    name: "Ioakeim",
+    year: 2025,
+    y: 1000,
+    x: -24,
+  },
+  {
+    name: "Toby",
+    year: 2025,
+    y: 1000,
+    x: -12,
+  },
+  {
+    name: "Muath",
+    year: 2025,
+    y: 1190,
+    x: -18,
+  },
+  //
   {
     name: "Hannah",
     year: 2025,
-    y: 400,
+    y: 450,
     x: 15,
   },
   {
     name: "Delta",
-    year: 2025,
-    y: 800,
+    year: 2026,
+    y: 200,
     x: 22,
   },
 ];
